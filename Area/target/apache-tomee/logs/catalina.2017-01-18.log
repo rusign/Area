@@ -1,0 +1,71 @@
+Jan 18, 2017 4:02:23 AM org.apache.openejb.core.timer.EjbTimerServiceImpl ejbTimeout
+WARNING: Exception occured while completing container transaction
+javax.transaction.RollbackException: Unable to commit: transaction marked for rollback
+	at org.apache.geronimo.transaction.manager.TransactionImpl.commit(TransactionImpl.java:272)
+	at org.apache.geronimo.transaction.manager.TransactionManagerImpl.commit(TransactionManagerImpl.java:252)
+	at org.apache.openejb.core.timer.EjbTimerServiceImpl.ejbTimeout(EjbTimerServiceImpl.java:833)
+	at org.apache.openejb.core.timer.EjbTimeoutJob.execute(EjbTimeoutJob.java:39)
+	at org.apache.openejb.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Exception: Transaction has timed out
+	at org.apache.geronimo.transaction.manager.TransactionImpl.commit(TransactionImpl.java:266)
+	... 7 more
+
+Jan 18, 2017 4:02:23 AM org.apache.openejb.core.timer.EjbTimerServiceImpl ejbTimeout
+WARNING: Exception occured while completing container transaction
+javax.transaction.RollbackException: Unable to commit: transaction marked for rollback
+	at org.apache.geronimo.transaction.manager.TransactionImpl.commit(TransactionImpl.java:272)
+	at org.apache.geronimo.transaction.manager.TransactionManagerImpl.commit(TransactionManagerImpl.java:252)
+	at org.apache.openejb.core.timer.EjbTimerServiceImpl.ejbTimeout(EjbTimerServiceImpl.java:833)
+	at org.apache.openejb.core.timer.EjbTimeoutJob.execute(EjbTimeoutJob.java:39)
+	at org.apache.openejb.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Exception: Transaction has timed out
+	at org.apache.geronimo.transaction.manager.TransactionImpl.commit(TransactionImpl.java:266)
+	... 7 more
+
+Jan 18, 2017 5:14:50 PM org.apache.openejb.core.timer.EjbTimerServiceImpl ejbTimeout
+WARNING: RuntimeException from ejbTimeout on Scheduler
+javax.ejb.ConcurrentAccessTimeoutException: Unable to get write lock on 'loop' method for: com.beans.Scheduler
+	at org.apache.openejb.core.singleton.SingletonContainer.aquireLock(SingletonContainer.java:327)
+	at org.apache.openejb.core.singleton.SingletonContainer._invoke(SingletonContainer.java:237)
+	at org.apache.openejb.core.singleton.SingletonContainer.invoke(SingletonContainer.java:212)
+	at org.apache.openejb.core.timer.EjbTimerServiceImpl.ejbTimeout(EjbTimerServiceImpl.java:797)
+	at org.apache.openejb.core.timer.EjbTimeoutJob.execute(EjbTimeoutJob.java:39)
+	at org.apache.openejb.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Jan 18, 2017 5:15:00 PM org.apache.openejb.core.timer.EjbTimerServiceImpl ejbTimeout
+WARNING: RuntimeException from ejbTimeout on Scheduler
+javax.ejb.ConcurrentAccessTimeoutException: Unable to get write lock on 'loop' method for: com.beans.Scheduler
+	at org.apache.openejb.core.singleton.SingletonContainer.aquireLock(SingletonContainer.java:327)
+	at org.apache.openejb.core.singleton.SingletonContainer._invoke(SingletonContainer.java:237)
+	at org.apache.openejb.core.singleton.SingletonContainer.invoke(SingletonContainer.java:212)
+	at org.apache.openejb.core.timer.EjbTimerServiceImpl.ejbTimeout(EjbTimerServiceImpl.java:797)
+	at org.apache.openejb.core.timer.EjbTimeoutJob.execute(EjbTimeoutJob.java:39)
+	at org.apache.openejb.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Jan 18, 2017 5:15:20 PM org.apache.openejb.core.timer.EjbTimerServiceImpl ejbTimeout
+WARNING: RuntimeException from ejbTimeout on Scheduler
+javax.ejb.ConcurrentAccessTimeoutException: Unable to get write lock on 'loop' method for: com.beans.Scheduler
+	at org.apache.openejb.core.singleton.SingletonContainer.aquireLock(SingletonContainer.java:327)
+	at org.apache.openejb.core.singleton.SingletonContainer._invoke(SingletonContainer.java:237)
+	at org.apache.openejb.core.singleton.SingletonContainer.invoke(SingletonContainer.java:212)
+	at org.apache.openejb.core.timer.EjbTimerServiceImpl.ejbTimeout(EjbTimerServiceImpl.java:797)
+	at org.apache.openejb.core.timer.EjbTimeoutJob.execute(EjbTimeoutJob.java:39)
+	at org.apache.openejb.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Jan 18, 2017 5:15:20 PM org.apache.openejb.core.timer.EjbTimerServiceImpl ejbTimeout
+WARNING: Failed to execute ejbTimeout on Scheduler successfully within 1 attempts
